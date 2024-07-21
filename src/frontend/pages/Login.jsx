@@ -25,7 +25,7 @@ const LoginPage = () => {
             Continue with Apple
           </button>
         </div>
-        <div className="py-3 text-center flex font-light text-gray-500 font-medium md:hidden">
+        <div className="py-3 text-center flex text-gray-500 font-medium md:hidden">
           <div className="border-t border-gray-300 mt-3 mr-2 w-full h-2"></div>
           <span>or</span>
           <div className="border-t border-gray-300 mt-3 ml-2 w-full h-2"></div>

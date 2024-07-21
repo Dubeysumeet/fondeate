@@ -96,14 +96,14 @@ const InvestmentKnowledgeCarousel = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={slide.label}
-                    className="block h-[12rem] space-y-4 rounded-lg m-1 border p-4 md:p-5 flex flex-col justify-between transition-all group-hover:ring-2"
+                    className="h-[12rem] space-y-4 rounded-lg m-1 border p-4 md:p-5 flex flex-col justify-between transition-all group-hover:ring-2"
                     style={{ borderColor: slide.borderColor, backgroundColor: slide.backgroundColor }}
                   >
                     <div className="space-y-2">
                       <p className="text-lg md:text-xl text-gray-800 group-hover:text-black font-medium">{slide.label}</p>
                       <p className="text-sm md:text-base font-normal">{slide.description}</p>
                     </div>
-                    <span className="text-sm md:text-base block text-gray-800 flex items-center gap-2 group-hover:text-black group-hover:font-medium">
+                    <span className="text-sm md:text-base text-gray-800 flex items-center gap-2 group-hover:text-black group-hover:font-medium">
                       know more <FaExternalLinkAlt className="text-xs" aria-hidden="true" />
                     </span>
                   </a>

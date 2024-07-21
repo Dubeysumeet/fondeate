@@ -45,7 +45,7 @@ const InvestorSection = () => {
                                 </div>
                                 <div className="relative group">
                                     <div className="bg-gray-100 h-full w-full rounded-md absolute"></div>
-                                    <div className="rounded-md bg-white w-full border border-[#C4C4C4] w-full p-4 py-6 transition-all translate-x-0 translate-y-0 group-hover:translate-x-1.5 group-hover:-translate-y-1.5">
+                                    <div className="rounded-md bg-white border border-[#C4C4C4] w-full p-4 py-6 transition-all translate-x-0 translate-y-0 group-hover:translate-x-1.5 group-hover:-translate-y-1.5">
                                         <p className="text-sm md:text-base lg:text-lg">
                                             <span className="font-bold">+6,688</span> Fondeate investors
                                         </p>

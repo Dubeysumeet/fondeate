@@ -15,7 +15,7 @@ const HeroSection = () => {
                     <h1 className="text-black text-6xl mb-4">
                         Invest in <br /> <span className="bg-gradient-to-r from-[#52B5F0] via-[#A9A8EF] to-[#F79A76] bg-clip-text text-transparent">Community Rounds</span>
                     </h1>
-                    <p className="text-xl text-black mb-4 text-center lg:text-left max-w-2xl font-normal text-[#292524] space-y-1 px-2 xs:px-6">
+                    <p className="text-xl mb-4 text-center lg:text-left max-w-2xl font-normal text-[#292524] space-y-1 px-2 xs:px-6">
                         Get equity and front-row seats to the startups and small businesses we love—⁠for just $100.
                     </p>
                     <Button href="#join-Fondeate" primary>Join Fondeate</Button>

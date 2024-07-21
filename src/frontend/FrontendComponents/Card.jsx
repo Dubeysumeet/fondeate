@@ -2,7 +2,7 @@ import doorvestCardImage from '../../assets/images/doorvest-card.png'; // Import
 
 const Card = ({ title, description, raised, investors, coInvestedLogo, imageSrc, href }) => {
     return (
-        <a href={href} title={title} target="_blank" className="block w-[259px] xl:w-[288px] flex flex-col gap-2 hover:bg-white rounded-lg hover:ring-2 ring-blue-50 m-1" aria-hidden="false">
+        <a href={href} title={title} target="_blank" className="w-[259px] xl:w-[288px] flex flex-col gap-2 hover:bg-white rounded-lg hover:ring-2 ring-blue-50 m-1" aria-hidden="false">
             <img src={doorvestCardImage} alt={title} className="xl:hidden w-full h-auto rounded-t-lg" />
             <img src={doorvestCardImage} alt={title} className="hidden xl:block max-w-[288px] max-h-[208px] object-cover rounded-t-lg" />
             <div className="w-[259px] xl:w-[288px] max-w-full bg-white rounded-b-lg flex flex-col gap-2 p-4 xl:p-5 pb-3 xl:pb-4">
