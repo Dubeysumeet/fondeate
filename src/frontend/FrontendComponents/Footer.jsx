@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookSquare, faTwitterSquare, faLinkedin, faYoutubeSquare, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import logo from '../../assets/images/IMG_1969.png';
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -13,7 +14,7 @@ const Footer = () => {
         <div className="flex-none mr-4 xl:mr-12">
           <div className="flex-col lg:flex-row flex">
             <div className="flex-none">
-              <a href="/pbc" aria-label="PBC">
+              <NavLink to="/pbc" aria-label="PBC">
                 <img
                   className="h-18 w-18 mb-2 md:h-20 md:w-20 lg:h-24 lg:w-24 bg-cover mx-auto lg:mx-0"
                   alt="Fondeate logo"
@@ -22,7 +23,7 @@ const Footer = () => {
                   height="50"
                   loading="lazy"
                 />
-              </a>
+              </NavLink>
             </div>
             <div className="flex-grow lg:ml-8 mt-3 text-sm lg:text-base text-center lg:text-left lg:mt-1">
               <div className="font-sm lg:font-base font-medium leading-7">
@@ -37,18 +38,18 @@ const Footer = () => {
         <div className="flex-grow -mt-0.5">
           <div className="flex justify-between sm:justify-around text-xs sm:text-sm gap-3">
             <ul className="wf-link-nav">
-              <li className="py-3 fontDec"><a href="/#history">Our history</a></li>
-              <li className="py-3 fontDec"><a href="/#">Careers</a></li>
-              <li className="py-3 fontDec"><a href="/#">Blog</a></li>
-              <li className="py-3 fontDec"><a href="/#">VIP Members</a></li>
-              <li className="py-3 fontDec"><a href="/#">Get/Give$</a></li>
+              <li className="py-3 fontDec"><NavLink to="/#history">Our history</NavLink></li>
+              <li className="py-3 fontDec"><NavLink to="/#">Careers</NavLink></li>
+              <li className="py-3 fontDec"><NavLink to="/#">Blog</NavLink></li>
+              <li className="py-3 fontDec"><NavLink to="/#">VIP Members</NavLink></li>
+              <li className="py-3 fontDec"><NavLink to="/#">Get/Give$</NavLink></li>
             </ul>
             <ul className="wf-link-nav">
-              <li className="py-3 fontDec"><a href="/#">Fundraising Playbook</a></li>
-              <li className="py-3 fontDec"><a href="/#">FAQ for investors</a></li>
-              <li className="py-3 fontDec"><a href="/#">FAQ for Founders</a></li>
-              <li className="py-3 fontDec"><a href="/#">Guides</a></li>
-              <li className="py-3 fontDec"><a href="/#">Support</a></li>
+              <li className="py-3 fontDec"><NavLink to="/#">Fundraising Playbook</NavLink></li>
+              <li className="py-3 fontDec"><NavLink to="/#">FAQ for investors</NavLink></li>
+              <li className="py-3 fontDec"><NavLink to="/#">FAQ for Founders</NavLink></li>
+              <li className="py-3 fontDec"><NavLink to="/#">Guides</NavLink></li>
+              <li className="py-3 fontDec"><NavLink to="/#">Support</NavLink></li>
             </ul>
           </div>
         </div>
@@ -90,12 +91,12 @@ const Footer = () => {
             <div>
               <button className="wf-btn-flat wf-btn-med-gray-flat text-xs px-0">IMPORTANT DISCLOSURES</button>
             </div>
-            <a href="/terms">
+            <NavLink to="/terms">
               <button className="wf-btn-flat wf-btn-med-gray-flat text-xs px-0 uppercase">Terms</button>
-            </a>
-            <a href="/terms#privacy">
+            </NavLink>
+            <NavLink to="/terms#privacy">
               <button className="wf-btn-flat wf-btn-med-gray-flat text-xs px-0 uppercase">Privacy</button>
-            </a>
+            </NavLink>
           </div>
           <div className="flex-none lg:mr-14 mt-4 sm:my-0 text-left mx-auto">
             <div className="flex flex-row gap-2 items-center">

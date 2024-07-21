@@ -1,23 +1,27 @@
 import './App.css'
-import FAQs from './frontend/FrontendComponents/FAQs'
 import Footer from './frontend/FrontendComponents/Footer'
-import HeroSection from './frontend/FrontendComponents/Hero'
-import InvestmentKnowledgeCarousel from './frontend/FrontendComponents/InvestmentDetails'
-import InvestorSection from './frontend/FrontendComponents/InvestorSection'
 import Navbar from './frontend/FrontendComponents/Navbar'
-import Testimonial from './frontend/FrontendComponents/Testimonial'
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from './frontend/pages/Home'
+import Login from './frontend/pages/Loginpage';
+import RegisterPage from './frontend/pages/Register';
 
 function App() {
  
   return (
     <>
-     <Navbar/>
-     <HeroSection/>
-    <InvestorSection/>
-    <InvestmentKnowledgeCarousel/>
-    <FAQs/>
-    <Testimonial/>
-    <Footer/>
+    <Router>
+<Navbar/>
+    <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/home" element={<Home/>} />
+        <Route path="/Login" element={<Login/>} />
+        <Route path="/Signup" element={<RegisterPage/>} />
+      </Routes>
+
+      <Footer/>
+    </Router>
+     
     </>
   )
 }
