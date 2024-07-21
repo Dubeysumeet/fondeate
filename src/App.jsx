@@ -5,6 +5,9 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from './frontend/pages/Home'
 import Login from './frontend/pages/Loginpage';
 import RegisterPage from './frontend/pages/Register';
+import Profile from './frontend/FrontendComponents/Profile';
+import Explorepage from './frontend/pages/explore';
+import Raisemoney from './frontend/pages/raisemoney';
 
 function App() {
  
@@ -17,6 +20,9 @@ function App() {
         <Route path="/home" element={<Home/>} />
         <Route path="/Login" element={<Login/>} />
         <Route path="/Signup" element={<RegisterPage/>} />
+        <Route path="/profile" element={<Profile/>} />
+        <Route path="/explore" element={<Explorepage/>} />
+        <Route path="/raise" element={<Raisemoney/>} />
       </Routes>
 
       <Footer/>
