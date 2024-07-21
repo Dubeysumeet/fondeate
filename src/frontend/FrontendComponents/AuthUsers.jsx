@@ -44,7 +44,7 @@ const AuthUsers = () => {
               <Settings className="w-5 h-5 mr-2" />
               Account
             </a>
-            <a href="/edit-profile" className="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100">
+            <a href="/profile" className="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100">
               <Edit className="w-5 h-5 mr-2" />
               Edit
             </a>
