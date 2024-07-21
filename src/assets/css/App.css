@@ -1,0 +1,139 @@
+body{
+    font-family: Gotham SSm A,Gotham SSm B,Helvetica,Arial,sans-serif;
+  }
+  
+  .fontDec:hover{
+    text-decoration: underline;
+  }
+  
+  @keyframes moveTopBottom {
+    0% {
+        transform: translateY(-100%);
+    }
+    50% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+  }
+  
+  @keyframes moveBottomTop {
+    0% {
+        transform: translateY(100%);
+    }
+    50% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+  }
+  
+  
+  
+  @keyframes moveTopBottom {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+  }
+  
+  @keyframes moveBottomTop {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+  }
+  
+  .animate-moveTopBottom {
+    animation: moveTopBottom 50s linear infinite;
+  }
+  
+  .animate-moveBottomTop {
+    animation: moveBottomTop 50s linear infinite;
+  }
+  
+  .cards-column {
+    transform: rotate(5deg);
+  }
+  .card{
+    cursor: pointer;
+  }
+  .cards-container:hover {
+    animation-play-state: paused;
+  }
+  
+  .marquee {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .marquee__wrapper {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .marquee__group {
+    display: flex;
+    animation: marquee-animation 30s linear infinite;
+  }
+  
+  .marquee__item {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin: 0 1rem;
+    border: 1px solid #b0bec5;
+    border-radius: 0.5rem;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  .marquee__item:hover {
+    background-color: #f0f0f0;
+    border-color: #455a64;
+  }
+  
+  .marquee--right-to-left {
+    animation-direction: normal;
+  }
+  
+  .marquee--left-to-right {
+    animation-direction: reverse;
+  }
+  
+  .marquee--slow {
+    animation-duration: 30s;
+  }
+  
+  @keyframes marquee-animation {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  
+  .custom-home-gradient {
+    background: radial-gradient(circle at top left, rgba(255, 205, 107, .5), transparent 30%), radial-gradient(circle at top right, rgba(130, 229, 255, .5), transparent 30%), radial-gradient(circle at bottom left, rgba(229, 220, 254, .5), transparent 30%);
+  }
+  
+  .testimonialLtoR, .testimonialRtoL{
+    cursor: pointer;
+  }
+  
+  .animationMovePaused:hover{
+    animation-play-state: paused;
+  }
