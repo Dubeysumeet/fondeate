@@ -24,7 +24,7 @@ function App() {
         <Route path="/profile" element={<Profile/>} />
         <Route path="/explore" element={<Explorepage/>} />
         <Route path="/raise" element={<Raisemoney/>} />
-        <Route path="/userprofile/:tab" element={<SidebarTabs />} />
+        <Route path="/userprofile/:tab?" element={<SidebarTabs />} />
       </Routes>
 
       <Footer/>
