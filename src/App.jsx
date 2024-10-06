@@ -8,6 +8,7 @@ import RegisterPage from './frontend/pages/Register';
 import Profile from './frontend/FrontendComponents/Profile';
 import Explorepage from './frontend/pages/explore';
 import Raisemoney from './frontend/pages/raisemoney';
+import SidebarTabs from './frontend/FrontendComponents/UserProfile/SidebarTabs';
 
 function App() {
  
@@ -23,6 +24,7 @@ function App() {
         <Route path="/profile" element={<Profile/>} />
         <Route path="/explore" element={<Explorepage/>} />
         <Route path="/raise" element={<Raisemoney/>} />
+        <Route path="/userprofile/:tab" element={<SidebarTabs />} />
       </Routes>
 
       <Footer/>

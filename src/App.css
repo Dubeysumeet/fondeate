@@ -1,0 +1,10 @@
+.tabs-container {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .active-tab {
+    font-weight: bold;
+    border-bottom: 2px solid #000;
+  }
+  
